@@ -1,0 +1,19 @@
+Les piles et les files sont deux variantes des listes chaînées qui permettent de contrôler la manière dont sont ajoutés les nouveaux éléments.
+
+Ici on insère des éléments uniquement au début ou à la fin de la liste.
+
+Les piles et les files sont très utiles pour des programmes qui doivent traiter des données qui arrivent au fur et à mesure.
+
+
+
+
+Il y a des programmes où il est nécessaire de stocker des données temporairement pour les ressortir dans un ordre précis: le dernier élément stocker doit être le premier à ressortir.
+
+L'OS utilise ce type d'algorithme pour retenir l'ordre dans lequel les fonctions ont été appelées.
+
+Pour retenir l'ordre dans lequel les fonctions ont été appelées, l'ordinateur crée une pile de ces fonctions au fur et à mesure.
+Grace à cette technique, l'ordinateur sait à quelle fonction il doit retourner. Il peut empiler 100 fonctions d'affilée s'il le faut, il retrouvera toujours le main en bas de la pile.
+
+
+Comme pour les listes chaînées, il n'existe pas de système de pile intégré au langage C. Il faudra donc le créer manuellement.
+
