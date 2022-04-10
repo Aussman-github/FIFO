@@ -27,7 +27,7 @@ struct Stack{
 
 void vidStacking(Stack *stack, int newNumber);
 
-
+int i32Unstacking(Stack *stack);
 
 
 

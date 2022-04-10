@@ -22,3 +22,24 @@ void vidStacking(Stack *stack, int newNumber)
 
 
 } //end vidStacking()
+
+
+
+int i32Unstacking(Stack *stack){
+
+    dbgCheckValidAddr(stack);
+
+    int nbUnstack = 0;
+
+    Element *elementUnstack = stack->first;
+    
+    if(stack != NULL && stack->first != NULL){
+        nbUnstack     = elementUnstack->number;
+        stack->first  = elementUnstack->next;
+
+        free(elementUnstack);  
+    }
+
+    return nbUnstack;
+} // end i32Unstacking()
+
