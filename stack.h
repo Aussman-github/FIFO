@@ -9,11 +9,23 @@ Compilation : iarcompiler/ GCC
 ********************************************************/
 #ifndef _STACK_H_
 #define _STACK_H_
+#include "debug.h"
+#include <stdlib.h>
+
+typedef struct Element Element;
+typedef struct Stack   Stack;
+
+struct Element{
+    int number;
+    Element *next;
+};
+
+struct Stack{
+    Element *first;
+};
 
 
-
-
-
+void vidStacking(Stack *stack, int newNumber);
 
 
 
